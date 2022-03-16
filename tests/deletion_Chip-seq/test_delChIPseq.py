@@ -4,12 +4,20 @@ from shared import Interval
 
 
 #говорим, что переменная ctcf_reader-объект класса ChipSeqReader
-ctcf_reader = ChiPSeqReader("Z:/scratch/202109061534Polya/3DPredictor/input/NPC/CTCF/GSE96107_NPC_CTCF.IDR0.05.filt.narrowPeak",
+# ctcf_reader = ChiPSeqReader("C:\Users\admin\3DPredictor-tests\tests\GSE96107_NPC_CTCF.IDR0.05.filt.narrowPeak",
+#                                                             name="CTCF")
+# изначальный вариеант кода
+ctcf_reader = ChiPSeqReader("C:\Users\admin\3DPredictor-tests\tests\Chip-seq_test\wgEncodeAwgTfbsHaibK562CtcfcPcr1xUniPk_narrowPeak.narrowpeak",
                                                             name="CTCF")
+
 #читаем файл
 ctcf_reader.read_file()
-#устанавливаем ориентация мотивов CTCF, для этого нужен доп файл с ориентациями
-ctcf_reader.set_sites_orientation("Z:/scratch/202109061534Polya/3DPredictor/input/NPC/CTCF/GSE96107_NPC_CTCF.IDR0.05.filt.narrowPeak-orient.bed")
+#устанавливаем ориентацию мотивов CTCF, для этого нужен доп файл с ориентациями
+# ctcf_reader.set_sites_orientation("C:\Users\admin\3DPredictor-tests\tests\GSE96107_NPC_CTCF.IDR0.05.filt.narrowPeak-orient.bed")
+#                                                             name="CTCF")
+# изначальный вариеант кода
+ctcf_reader.set_sites_orientation("C:\Users\admin\3DPredictor-tests\tests\Chip-seq_test\wgEncodeAwgTfbsHaibK562CtcfcPcr1xUniPk_narrowPeak-orient.bed")
+
 #напечатаем ту самую табличку, которая получилась в итоге
 # print(ctcf_reader.chr_data["chr11"])
 
