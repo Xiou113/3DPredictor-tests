@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, r'C:\Users\admin\3DPredictor-tests\3Dpredictor\source')
 from RNASeqReader import RNAseqReader
-from ChiPSeqReader import ChiPSeqReader     # а почему?...
+from ChiPSeqReader import ChiPSeqReader
 from shared import Interval
 
 rna_reader = RNAseqReader(r"C:\Users\admin\3DPredictor-tests\3Dpredictor\input\K562\RNA-seq\rna-seqPolyA.tsvpre.txt", name="RNA")
