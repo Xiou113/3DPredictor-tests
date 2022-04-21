@@ -17,5 +17,5 @@ inversion = Interval("chr11", 207500, 253000)     # 1) 207501, 207505  2) 207500
 rna_reader.inverse_region_RNA(inversion, r"C:\Users\admin\3DPredictor-tests\tests\deletion_RNASeq_2\mart_export_txt")   # 5) 207500, 236600  6) 207500, 253000
 print("Inversion interval:", inversion.start - inversion.end)
 print("Data after inversion:")
-# print(rna_reader.chr_data['chr11'].iloc[10:20, [rna_reader.chr_data["chr11"].columns.get_loc("chr"),rna_reader.chr_data["chr11"].columns.get_loc("start")
-#                                                         ,rna_reader.chr_data["chr11"].columns.get_loc("end"),rna_reader.chr_data["chr11"].columns.get_loc("sigVal"),rna_reader.chr_data["chr11"].columns.get_loc("gene")]])
+print(rna_reader.chr_data['chr11'].iloc[10:20, [rna_reader.chr_data["chr11"].columns.get_loc("chr"),rna_reader.chr_data["chr11"].columns.get_loc("start")
+                                                        ,rna_reader.chr_data["chr11"].columns.get_loc("end"),rna_reader.chr_data["chr11"].columns.get_loc("sigVal"),rna_reader.chr_data["chr11"].columns.get_loc("gene")]])
